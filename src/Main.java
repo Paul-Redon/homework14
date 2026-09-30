@@ -1,10 +1,10 @@
 public class Main {
     public static void main(String[] args) {
-        System.out.println("~~ Тестирование класса Product ~~");
         Product product1 = new Product(1, "Смартфон", 50000, "Электроника");
         Product product2 = new Product(2, "Ноутбук", 80000, "Электроника");
         Product product3 = new Product(1, "Смартфон", 55000, "Электроника");
         Product product4 = new Product(1, "Смартфон", 50000, "Аксессуары");
+        System.out.println("~~ Товары ~~");
         System.out.println("Товар 1: " + product1);
         System.out.println("Товар 2: " + product2);
         System.out.println("Товар 3: " + product3);
@@ -15,7 +15,6 @@ public class Main {
         System.out.println("product1.equals(product4): " + product1.equals(product4));
         System.out.println("product1.equals(product1): " + product1.equals(product1));
         System.out.println("product1.equals(null): " + product1.equals(null));
-        System.out.println("~~ Тестирование класса Order ~~");
         Product[] basket1 = {product1, product2};
         Product[] basket2 = {product1, product2};
         Product[] basket3 = {product2, product1};
@@ -25,6 +24,7 @@ public class Main {
         Order order3 = new Order("Иван", basket3);
         Order order4 = new Order("Петр", basket1);
         Order order5 = new Order("Иван", basket4);
+        System.out.println("~~ Заказы ~~");
         System.out.println("Заказ 1: " + order1);
         System.out.println("Заказ 2: " + order2);
         System.out.println("Заказ 3: " + order3);
